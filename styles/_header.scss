@@ -53,6 +53,21 @@
     padding: 10px;
   }
 
+  &__login-button {
+    @media screen and (max-width: $xl) {
+      display: none;
+    }
+  }
+  
+  &__burger-icon,
+  &__close-icon {
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+
   &__mobile-button {
     display: none;
     margin-left: 15px;
@@ -62,4 +77,43 @@
       display: block;
     }
   }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    z-index: 1;
+
+    background-color: white;
+
+    &.visible {
+      display: block;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    &__list {
+      margin-bottom: 60px;
+    }
+
+    &__link {
+      display: block;
+      color: black;
+      border-bottom: 1px solid black;
+      padding: 10px 0;
+    }
+
+    &__login-button {
+      display: block;
+      margin: 0 auto;
+      color: black;
+      border-color: black;
+    }
+  }  
 }
