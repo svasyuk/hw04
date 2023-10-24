@@ -405,6 +405,17 @@
 .header__link {
   padding: 10px;
 }
+@media screen and (max-width: 1200px) {
+  .header__login-button {
+    display: none;
+  }
+}
+.header__burger-icon, .header__close-icon {
+  display: none;
+}
+.header__burger-icon.visible, .header__close-icon.visible {
+  display: block;
+}
 .header__mobile-button {
   display: none;
   margin-left: 15px;
@@ -414,6 +425,38 @@
   .header__mobile-button {
     display: block;
   }
+}
+.header .mobile-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 120px;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  z-index: 1;
+  background-color: white;
+}
+.header .mobile-menu.visible {
+  display: block;
+}
+.header .mobile-menu.hidden {
+  display: none;
+}
+.header .mobile-menu__list {
+  margin-bottom: 60px;
+}
+.header .mobile-menu__link {
+  display: block;
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+.header .mobile-menu__login-button {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  border-color: black;
 }
 
 :root {

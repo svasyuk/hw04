@@ -31,11 +31,27 @@
             Login
           </button>
           <button class="header__mobile-button">
-            <img
-              class="header__mobile-icon"
-              src="./images/mobile-menu-icon.svg"
-              alt="Иконка мобильного меню"
-            />
+            <img class="header__burger-icon visible" src="./images/mobile-menu-icon.svg" alt="Мобильное меню" />
+            <img class="header__close-icon hidden" src="./images/close-icon.svg" alt="Закрыть мобильое меню" />
+          </button>
+        </div>
+        <div class="header__mobile-menu mobile-menu">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Product</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">About</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Contact</a>
+            </li>
+          </ul>
+          <button class="mobile-menu__login-button button button--small">
+            Login
           </button>
         </div>
       </div>
@@ -251,5 +267,6 @@
           </ul>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
