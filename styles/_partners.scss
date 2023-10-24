@@ -1,0 +1,53 @@
+.partners-section {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+  
+  &__title {
+    margin-bottom: 28px;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px;
+  }
+
+  &__subtitle {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+
+    @media screen and (max-width: $xl) {
+      br {
+        display: none;
+      }
+    }
+  }
+  
+  &__brands {
+    display: flex;
+    justify-content: center;
+    gap: 74px;
+    
+    @media screen and (max-width: $xl) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 50px
+    }
+  }
+
+  &__button {
+    margin-top: 50px;
+  }
+
+  &__img {
+    gap: 0px
+  }
+
+}
